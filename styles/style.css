@@ -1,9 +1,15 @@
-#qw {
-    color: rgb(0, 255, 55);
-  }  
-body
-{
 
-
+body {
   background-image: url(https://st4.depositphotos.com/4196725/20933/i/450/depositphotos_209336304-stock-photo-abstract-pixel-background-seamless-pattern.jpg);
+}
+
+.qw {
+  color: rgb(0, 255, 55);
+}  
+
+#main {
+  border: 1px solid rgb(175, 24, 24);
+  border-radius: 15px;
+  padding: 50px 30px;
+  color: darkred;
 }
