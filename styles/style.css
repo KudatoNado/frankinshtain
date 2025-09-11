@@ -4,12 +4,13 @@ body {
 }
 
 .qw {
-  color: rgb(0, 255, 55);
+  color: rgb(244, 248, 245);
 }  
-
+.ww {
+  color: rgb(52, 250, 102);
+}  
 #main {
-  border: 1px solid rgb(175, 24, 24);
-  border-radius: 15px;
+   border-radius: 15px;
   padding: 50px 30px;
   color: darkred;
 }
