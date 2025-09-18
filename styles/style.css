@@ -9,7 +9,26 @@ h1,h2,p{
 }
 p{ font-size: 16xp}
 
+ul li::marker {
 
+content: "✈️|| ||";
+color:rgba(251, 122, 0, 0.698);
+font-size: 1.2em;
+
+}
+
+
+.descrpition {
+  hyphens: auto;
+  color: #fff;
+}
+/* дефис */
+
+.Jason{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 
 div{font-size:  20px;}
 p{font-size: 1.5em;}
