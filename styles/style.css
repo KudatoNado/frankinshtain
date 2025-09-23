@@ -96,3 +96,31 @@ body {
   color: darkred;
 }
 
+
+.block{ 
+ display: block;
+  background-color: rgb(255, 1, 1);
+  border: 1px solid  cornflowerblue;
+}
+
+.inline{ display: inline;}
+
+.inline-block{ display: inline-block;
+
+  background-color: rgb(1, 255, 35);
+  border: 1px solid  rgb(255, 0, 242);
+
+  
+}
+
+.menu{ 
+  display: inline-block;
+  background: rgb(38, 255, 0);
+  color: bisque;
+  text-decoration: none;
+  padding: 10px 20px;
+  margin-right: 8px;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
