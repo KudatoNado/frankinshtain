@@ -1,0 +1,84 @@
+body{ 
+    background: #0008ff;
+    background: linear-gradient(90deg,rgba(0, 8, 255, 1) 0%, rgba(234, 237, 83, 1) 77%);
+}
+
+h1{ font-size: 50px;
+    text-align: center;
+    font-size: 60px;
+    font-weight: bold;
+    text-align: center;
+    background: linear-gradient(to right, rgb(38, 0, 255), orange, yellow, green, blue, indigo, violet);
+    -webkit-background-clip: text;   /* для Chrome, Safari */
+    -webkit-text-fill-color: transparent;
+    background-clip: text;           /* для Firefox */
+    color: transparent;              /* подстраховка */
+ }
+.b
+{
+    margin-top: 100px;
+    text-align: center;
+}
+.Sekret {
+    background: #dd00ff;
+    background: linear-gradient(90deg,rgba(221, 0, 255, 1) 0%, rgba(255, 0, 0, 1) 28%, rgba(0, 255, 123, 1) 68%, rgba(83, 137, 237, 1) 100%);
+    border: 2px solid white;
+    border-radius: 50%;
+    padding: 12px;
+    text-decoration: none;
+    
+}
+.Sekret:hover
+{ background: rgb(0, 162, 255);
+ color: rgb(9, 0, 128);
+}
+
+main{ display:inline-block}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .Sekret:active{
+    scale:1225%;
+}
+
+.Sekret:hover{
+    scale: 110%;
+} */
