@@ -214,3 +214,41 @@ right: 10px;
   color: #94a3b8;
   
 }
+.flex_container{
+  display: flex;
+  border: 2px solid black;
+  padding: 10px;
+ gap: 10px;
+}
+.flex_item{
+  background: lightblue;
+  border: 1px solid blue;
+  padding: 20px;
+  font-size: 20px;
+ 
+
+}
+.speshial{
+  order: -1;
+  background: lightgreen;
+}
+
+.products{
+  display: flex;
+  gap:20px;
+
+}
+
+.cart{
+  flex:1 1 150px;
+  background: lightblue;
+  padding: 20px;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.big{
+  flex-grow: 2;
+  align-self: flex-end;
+  background: lightgreen;
+}
