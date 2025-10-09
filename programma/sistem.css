@@ -1,0 +1,245 @@
+.header{
+    grid-area: header;
+    background: lightblue;
+}
+
+.sidebar{
+    grid-area: sidebar;
+    background: lightgreen;
+}
+.main{
+    grid-area: main;
+    background: lightcoral;
+}
+.footer{
+    grid-area: footer;
+    background: lightgray;
+}
+
+
+
+
+
+.menu{ 
+    display: flex;
+    justify-self: center;
+    gap: 1vw;
+    background: blue;
+    padding: 0.5vw;
+}
+
+.menu_item{
+    padding: 8px 12px;
+    background: #fff;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #0f172a;
+    font-weight: 600;
+}
+
+.menu_item:hover{background:#e2e8f0;}
+
+
+
+
+
+
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    padding: 16px;
+    background: #fafafa;
+}
+
+.card{
+    flex: 1 1 220px;
+    background: #e0f2fe;
+    border: 2px solid #38bdf8;
+    border-radius: 12px;
+    padding: 16px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.card--big{
+    flex-grow: 2; 
+    background: #bbf7d0; border-color: #22c55e;
+}
+
+
+.center-screen{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #f8fafc;
+}
+
+.btn{
+    padding: 12px 18px;
+    border-radius: 10px;
+    border: 0;
+    background: #2563ed;
+    color:#fff;
+    font:600 16px/1 system-ui, Arial;
+    cursor: pointer;
+}
+
+.btn:hover{ background: #1d4ed8;}
+
+
+.container{
+    display: grid;
+    /* grid-template-columns: 100px 200px;
+    grid-template-rows: 100px 100px; */
+    grid-template-columns: 8fr 4fr 1fr; 
+    /* 10px */
+    gap: 10px;
+}
+
+.item{
+    background: lightblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+
+
+body{
+    display: grid;
+    grid-template-areas: 
+    "header header"
+    "main main"
+    "footer footer";
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: 60px 1fr 50px;
+    gap: 10px;
+}
+
+
+.chessboard {
+    background: #bbc993;
+    padding: 50px;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(8, 50px); 
+    grid-template-rows: repeat(8, 50px);
+    gap: 5px;
+    padding: 20px;
+    justify-self: center;
+    border: 2px solid #d9af3d;
+    border-radius: 10px;
+    background: #f2ca5c;
+}
+
+.square{ 
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+ } 
+
+.square:nth-child(odd)  { background: #fff; }
+.square:nth-child(even) { background: #000; }
+
+.square:nth-child(n+9):nth-child(-n+16),
+.square:nth-child(n+25):nth-child(-n+32),
+.square:nth-child(n+41):nth-child(-n+48),
+.square:nth-child(n+57):nth-child(-n+64) {
+  filter: invert(1);
+}
+
+
+
+@media (max-width: 600px)
+{ .menu{
+    flex-direction: column;
+    gap: 10px;
+}}
+
+.photo{
+    width: 80%;
+    margin: 0 auto;
+}
+.photo_image{
+    max-width: 100%;
+    height: auto;
+}
+
+/* 
+https://serp.co/tools/css-reset/
+<link rel="stylesheet" href="https://css.serp.co/css-reset/reset.css/">
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+ margin: 0;
+ padding: 0;
+ border: 0;
+ font-size: 100%;
+ font: inherit;
+ vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+ display: block;
+}
+body {
+ line-height: 1;
+}
+ol, ul {
+ list-style: none;
+}
+blockquote, q {
+ quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+ content: '';
+ content: none;
+}
+table {
+ border-collapse: collapse;
+ border-spacing: 0;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.grid_item{
+    background: lightcoral;
+    padding: 20px;
+    text-align: center;
+}
+
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.gallery_items{
+    background: lightblue;
+    padding: 15px;
+    text-align: center;
+}
