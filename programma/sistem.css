@@ -85,9 +85,12 @@
     color:#fff;
     font:600 16px/1 system-ui, Arial;
     cursor: pointer;
+    background-color: blue;
+    transition: background-color 0.5s;
 }
 
-.btn:hover{ background: #1d4ed8;}
+.btn:hover{ background: #1d4ed8;
+background-color: green;}
 
 
 .container{
@@ -142,10 +145,11 @@ body{
     width: 50px;
     height: 50px;
     border-radius: 10px;
+    
  } 
 
-.square:nth-child(odd)  { background: #fff; }
-.square:nth-child(even) { background: #000; }
+.square:nth-child(odd)  { background: #fff; animation: spin 2s linear infinite;}
+.square:nth-child(even) { background: #000; animation: anspin 2s linear infinite;}
 
 .square:nth-child(n+9):nth-child(-n+16),
 .square:nth-child(n+25):nth-child(-n+32),
@@ -243,3 +247,123 @@ table {
     padding: 15px;
     text-align: center;
 }
+
+@keyframes spin{
+    0% {transform:  rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}
+
+.loader{
+    animation: spin 2s linear infinite;
+}
+
+@keyframes anspin{
+    0% {transform:  rotate(0deg);}
+    100% {transform: rotate(-360deg);}
+}
+
+
+@keyframes jamp{
+    0% {transform: translateY(0);}
+    50% {transform: translateY(-9px);}
+    100% {transform: translateY(0px);}
+}
+
+.radball {
+    width: 50px;
+    height: 50px;
+    background: rgb(0, 255, 0);
+    border-radius: 50% ;
+    animation: jamp 1s ease-in-out infinite;
+}
+
+.grinball {
+    width: 50px;
+    height: 50px;
+    background: rgb(204, 0, 255);
+    border-radius: 50% ;
+    animation: jamp 1.2s ease-in-out infinite;
+}
+
+.grunball {
+    width: 50px;
+    height: 50px;
+    background: rgb(204, 0, 255);
+    border-radius: 50% ;
+    animation: jamp 1s ease-in-out infinite;
+}
+.ff{
+    display: flex;
+    flex-direction: row;
+    gap: 1.5px;
+}
+
+@keyframes blink {
+    0%{opacity: 1;}
+    50%{opacity: 0;}
+    100%{opacity: 1;}
+    
+}
+
+.text{animation: blink 0.1s infinite;}
+
+
+.animation-button{
+    padding: 12px 18px;
+    border-radius: 12px;
+    border: 0;
+    color: #fff;
+    background: #6366f1;
+    cursor: pointer;
+    transition: transform .6s cubic-bezier(.68,-.55,.27,1.55), all .33 ease;
+}
+
+.animation-button:hover{ transform: scale(1.08); background-color: brown;}
+
+
+.a-underline{
+    position: relative;
+    text-decoration: none;
+    color: #111;
+}
+.a-underline::after{
+    content: "";
+    position: absolute;
+    left: 0; 
+    bottom: -2px;
+    height: 2px; 
+    width: 100%;
+    background: #111;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s;
+}
+.a-underline:hover::after{
+    transform: scaleX(1);
+}
+
+.fade-in{
+    opacity: 0;
+    transform: translateY(12px);
+    animation: appear 6000ms ease forwards;
+}
+
+@keyframes appear {
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes shift{
+    0%{background-position: 0% 50%;}
+    50%{background-position: 100% 50%;}
+    100%{background-position: 0% 50%;}
+}
+.grad{
+    min-height: 160%;
+    display: grid; place-items: center;
+    color: #fff; font-weight: 700;
+    background: linear-gradient(45deg, #8b5cf6, #);
+}
+
