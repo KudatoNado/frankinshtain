@@ -219,3 +219,93 @@ while ( b > 0){
 }
 
 
+let pasword;
+
+do{
+   pasword = prompt("Введите пароль:");
+} while (pasword !== "1234");
+
+console.log("Пароль принят!");
+
+
+
+
+do{
+   pasword = prompt(" Ещё Введите пароль:");
+} while (pasword !== "5");
+
+console.log("Пароль принят!");
+
+
+let fruits =["Яблоки","Банана","Глуша"];
+for (let fruit of fruits) {
+   console.log(fruit);
+   
+}
+
+for (let letter of "ПРИвет") {
+  console.log(letter);
+   
+}
+
+let animal =["Яблоконя","Бананафтор","Глуша"];
+for (let anomal of animal) {
+   console.log(anomal);
+   
+}
+
+let person ={ nami: "Даниил", age: 17, city: "Минск"};
+for (let key in person) {
+   
+   console.log(key + ": " + person[key]);
+}
+
+let I ={ nami: "Анна", age: 15, city: "Минск"};
+for (let key in I) {
+   
+   console.log(key + ": " + I[key]);
+}
+
+for (let index = 1; index <= 10; index++) {
+   if (index % 2 === 0) continue;
+   console.log(index);
+}
+
+let g = 0;
+for (let index = 1; index <= 5; index++) {
+     
+      g= g + index;
+      console.log(g)
+
+
+}
+
+
+
+for (let index = 1; index <= 10; index++) {
+     
+     console.log("3 * ",index," = ", 3*index )
+
+
+}
+
+
+let stch = 0;
+let hhhhh = "Ananas"
+for (let leterh of hhhhh)
+ {
+     if (leterh === "a"){
+         stch++
+     }
+     console.log(stch);
+}
+
+let n = 10;
+for (let i = 0; i < array.length; i++) {
+   console.log(i * i);
+   
+}
+
+
+
+
