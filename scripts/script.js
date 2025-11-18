@@ -300,11 +300,11 @@ for (let leterh of hhhhh)
      console.log(stch);
 }
 
-let n = 10;
-for (let i = 0; i < array.length; i++) {
-   console.log(i * i);
+// let n = 10;
+// for (let i = 0; i < array.length; i++) {
+//    console.log(i * i);
    
-}
+// }
 
 
 function showMwssage(from, text) { 
@@ -313,10 +313,71 @@ function showMwssage(from, text) {
 
 showMwssage('Привет','пока');
 
-function sum(a, b) {
-  return a + b;
+// function sum(a, b) {
+//   return a + b;
+// }
+
+// let result =sum(1, 2);
+// alert( result);
+
+
+const generateSumFinder = () => {
+   const sum = (a,b) => a+b;
+   return sum;
+};
+
+const sum = generateSumFinder();
+sum(1, 5);
+
+
+
+
+
+
+const obj = {
+   name: "Test",
+   show(){
+      console.log(this.name);
+   }
+};
+
+obj.show();
+
+
+
+let hh = "Nikolay";
+
+function sayHi() {
+   alert ("hi" + hh);
+}
+hh ="Irina";
+
+sayHi();
+
+
+
+
+let gl = "Chort";
+
+function sayH() {
+   alert (gl);
+}
+gl ="Danila";
+
+sayH();
+
+
+const generateSumFinde = () => {
+   const sumaa = (a,b,c) => a+b+c;
+   return sumaa;
+};
+
+const sumaa = generateSumFinde();
+sumaa(1, 5, 6);
+
+ const hell = () => { 
+    console.log("aaaaaaqaa")
+
 }
 
-let result =sum(1, 2);
-alert( result);
-
+hell();
