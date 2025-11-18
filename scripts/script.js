@@ -307,5 +307,16 @@ for (let i = 0; i < array.length; i++) {
 }
 
 
+function showMwssage(from, text) { 
+   alert(from +', '+ text);
+}
 
+showMwssage('Привет','пока');
+
+function sum(a, b) {
+  return a + b;
+}
+
+let result =sum(1, 2);
+alert( result);
 
