@@ -381,3 +381,46 @@ sumaa(1, 5, 6);
 }
 
 hell();
+
+let fruist =["","0",""];
+let last = fruist.pop();
+
+console.log(fruist);
+console.log(last);
+
+let numbers = [2, 3 ];
+numbers.unshift(1);
+
+console.log(numbers);
+
+let colorsa = ["red", "green", "blue"];
+
+console.log(colorsa.indexOf("green"));
+console.log(colorsa.indexOf("black"));
+console.log(colorsa.includes("green"));
+console.log(colorsa.includes("black"));
+
+
+let nums = [10, 20, 30, 40];
+
+let part= nums.slice(1, 3);
+console.log(part);
+console.log(nums);
+
+
+let num = [1,2,3];
+num.reverse();
+console.log(num);
+
+let aaa = [10, 2, 30];
+
+aaa.sort((a, b) =>  a - b)
+
+let nu = [1, 2, 3];
+let newNums = nu.map(n => n +1);
+console.log(newNums);
+
+let nua = [1, 2, 3, 4, 5, 6];
+let even = nua.filter(n => n %2 === 0);
+console.log(even);
+
